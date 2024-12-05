@@ -19,8 +19,8 @@
             margin: auto;
         }
 
-        .collection {
-            display:flex;
+        #collection {
+            display: flex;
             justify-content: center;
             flex-wrap: wrap;
             align-content: center;
@@ -67,30 +67,25 @@
     <main class=" mt-4">
 
 
-        <div class="collection ">
-
-
-            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
-            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
-            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
-            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
-            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
-            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
-            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
-            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
-            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
-            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
-            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
-            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
-
-
+        <div id="collection">
 
 
         </div>
 
 
     </main>
+    <script>
+        let collection = document.getElementById('collection');
 
+        for (let i = 0; i < localStorage.length; i++) {
+            let key = localStorage.key(i)
+            let value = localStorage.getItem(key);
+
+
+            collection.innerHTML += `<img id="tittle_img" src="${value}" alt="title_picture" class=" rounded-2xl">`
+
+        }
+    </script>
 </body>
 
 </html>
