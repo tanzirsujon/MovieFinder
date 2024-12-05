@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+
+}
+
+.navleft {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 23px;
+  /* line-height: 16px; */
+
+
+}
+
+input::placeholder {
+  color: black;
+}
+
+.savewatch {
+  background-color: rgba(217, 217, 217, 1);
+}
+
+
+
+.genre span {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 6rem;
+  height: 2rem;
+}
+
+.btn {
+  background-color: rgba(217, 217, 217, 1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 0.6rem;
+  width: 7rem;
+  height: 2.5rem;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+
+}
+
+.fuldetails p {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.yt {
+  display: flex;
+  border-radius: 1.4rem;
+  width: 30vw;
+  height: 17rem;
+}
+
+.infocontainer {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.actors {
+  background-color: rgba(217, 217, 217, 1);
+  width: 12vw;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  height: 4vh;
+  border-radius: 0.3rem;
+  /* background-color: rgb(190, 187, 187); */
+}
+
+.actorsD {
+  background-color: whitesmoke;
+
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  height: 4vh;
+
+  /* background-color: rgb(190, 187, 187); */
+}
+
+.onelist {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+
+.rotateloader {
+  animation-name: loader;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate; */
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes loader {
+  0% {
+    transform: rotate(0turn);
+  }
+
+
+
+  100% {
+    transform: rotate(1turn);
+
+  }
+}
+
+/* below is the index files css */
+
+.index-body {
+  background: rgba(206, 216, 202, 1);
+}
+
+.indexnavleft span {
+  color: rgba(26, 133, 120, 1);
+  font-weight: bold;
+  font-size: 3rem;
+  height: auto;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  letter-spacing: 0.4rem;
+
+}
+

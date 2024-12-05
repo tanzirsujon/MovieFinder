@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFinder</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body
+    class="bg-[rgb(233,228,212)] flex justify-center content-center items-center flex-wrap overflow-x-hidden h-full] w-full">
+    <div class="infocontainer bg-[rgb(219,231,236)] h-[99vh] w-[98vw] rounded-3xl ">
+        <nav class="flex justify-around items-center  w-[100vw] h-[15vh] mx-[7.6]">
+            <div class="navleft flex flex-col flex- tracking-widest w-[8%] h-[13vh] ">
+                <span>The</span>
+                <span>Movie</span>
+                <span>Tracker</span>
+            </div>
+            <div class="navright w-[60%] relative flex justify-between items-center">
+                <input type="Search" id="search"
+                    class=" outline-none h-[6.5vh] w-[35vw] bg-[rgb(217,217,217)] text-center rounded-3xl inter text-black  "
+                    placeholder="Search a Movie or a Series">
+
+                <img id="imgbtn" src="/resources/img/search.png"
+                    class="hover:cursor-pointer h-9 absolute left-[2%] bottom-[11%]" alt="">
+                <span><img id="loader" src="/resources/img/loading.png" alt=""
+                        class="  rotateloader h-9 absolute right-[30%] bottom-[11%] "></span>
+                <div class="saveinnav">
+                    <div class="savewatch flex items-center justify-center gap-2 w-[13vw] h-10 rounded-2xl">
+                        <span class="">
+                            <img src="/resources/img/bookmark-white.png" alt="" class="h-5">
+                        </span>
+                        <span id="addwatchlist" class="inter font-bold">Add to watchlist</span>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <main class=" mx-[7.6rem] mt-2">
+            <div class="maincontainer flex flex-col justify-around items-center flex-wrap  ">
+                <div class="titleandwatch flex justify-between items-cente w-full h-8 ">
+                    <div id="moviename" class="movietitle inter text-[1.5rem]  tracking-widest font-[800]">
+                        The Gray Man
+                    </div>
+
+
+
+                </div>
+                <div class="moiveinfo&trailer w-full h-auto mt-4 flex items-center justify-center">
+                    <div class="detailsandpic w-[50%] flex gap-5 items-center ">
+                        <div class="titlepic">
+                            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture"
+                                class="h-[15rem] rounded-2xl">
+                        </div>
+                        <div class="details">
+                            <div class="genre flex items-center gap-4 inter font-bold mb-3">
+                                <span id="genrebtn1">Action</span>
+                                <span id="genrebtn2">Sci-Fi</span>
+                                <span id="genrebtn3">Sci-Fi</span>
+                            </div>
+                            <div class="fuldetails">
+                                <p class="inter w-[25rem] font-bold " id="plot">
+                                    A thief who steals corporate secrtes through the use of dream sharing technology is
+                                    give the inverse task of plating an idea int0 the mind of a C.E.O, but his tragic
+                                    past
+                                    may doom the proect and his team to disater
+                                </p>
+                            </div>
+                            <div class="rating flex flex-col mt-10">
+                                <p class=" inter font-bold" id="ratingsite">IMDB Rating</p>
+                                <span class="inter" id="ratingstar">9.1/10</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="trailer w-[50%] flex items-center justify-end">
+                        <div id="player" class="yt"></div>
+
+                    </div>
+
+
+
+                </div>
+                <div class="flex items-center justify-center w-full">
+                    <span class="actors flex items-center justify-center inter font-bold text-lg">
+                        ACTORS
+                    </span>
+                </div>
+
+                <div class="statuslist flex justify-between items-center w-full mt-3">
+                    <span class="  flex flex-col gap-2 h-[27vh]  ">
+                        <img src="./resources/actorimg/Ryan Gosling.jpg" alt="title_picture"
+                            class=" h-[11rem] rounded-lg  shadow-md">
+
+                        <span class="inter font-semibold ml-3 tracking-wider "> Ryan Gosling</span>
+
+
+
+                    </span>
+                    <span class="  flex flex-col gap-2  h-[27vh]  ">
+                        <img src="./resources/actorimg/ana de armes.jpg" alt="title_picture"
+                            class=" h-[11rem] rounded-lg  shadow-md">
+
+                        <span class="inter font-semibold ml-3 tracking-wider "> Ryan Gosling</span>
+
+
+
+                    </span>
+                    <span class="  flex flex-col gap-2 h-[27vh]  ">
+                        <img src="./resources/actorimg/ChrisEvans2023.jpg" alt="title_picture"
+                            class=" h-[11rem] rounded-lg  shadow-md">
+
+                        <span class="inter font-semibold ml-3 tracking-wider "> Ryan Gosling</span>
+
+
+
+                    </span>
+
+
+
+
+
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./js/mainindex.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+
+</body>
+
+</html>
