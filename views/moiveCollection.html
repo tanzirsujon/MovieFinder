@@ -5,13 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Collection</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        main {
+
+            max-width: 90vw;
+
+            margin: auto;
+        }
+
+        .collection {
+            display:flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            gap: 3rem;
+        }
+
+        #tittle_img {
+            height: 15rem;
+        }
+    </style>
 </head>
+
 
 <body>
 
-    <div id="Collection">
+    <header>
+        <nav class="flex justify-around items-center  w-[100vw] h-[15vh] mx-[7.6]">
+            <div class="navleft flex flex-col flex- tracking-widest w-[8%] h-[13vh] ">
+                <span>The</span>
+                <span>Movie</span>
+                <span>Tracker</span>
+            </div>
+            <div class="navright w-[60%] relative flex justify-between items-center">
+                <input type="Search" id="search"
+                    class=" outline-none h-[6.5vh] w-[35vw] bg-[rgb(217,217,217)] text-center rounded-3xl inter text-black  "
+                    placeholder="Search a Movie or a Series">
 
-    </div>
+                <img id="imgbtn" src="/resources/img/search.png"
+                    class="hover:cursor-pointer h-9 absolute left-[2%] bottom-[11%]" alt="">
+                <span><img id="loader" src="/resources/img/loading.png" alt=""
+                        class="   h-9 absolute right-[30%] bottom-[11%] "></span>
+                <div class="saveinnav">
+                    <div class="savewatch flex items-center justify-center gap-2 w-[13vw] h-10 rounded-2xl">
+                        <span class="">
+                            <img src="/resources/img/bookmark-white.png" alt="" class="h-5">
+                        </span>
+                        <span id="addwatchlist" class="inter font-bold">Add to watchlist</span>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main class=" mt-4">
+
+
+        <div class="collection ">
+
+
+            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
+            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
+            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
+            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
+            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
+            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
+            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
+            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
+            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
+            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
+            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
+            <img id="tittle_img" src="/resources/img/thegray.jpg" alt="title_picture" class=" rounded-2xl">
+
+
+
+
+        </div>
+
+
+    </main>
 
 </body>
 

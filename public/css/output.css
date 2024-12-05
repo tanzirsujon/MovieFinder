@@ -570,22 +570,6 @@ video {
   left: 2%;
 }
 
-.right-0 {
-  right: 0px;
-}
-
-.right-10 {
-  right: 2.5rem;
-}
-
-.right-24 {
-  right: 6rem;
-}
-
-.right-\[40\%\] {
-  right: 40%;
-}
-
 .right-\[30\%\] {
   right: 30%;
 }
@@ -660,6 +644,10 @@ video {
   height: 100vh;
 }
 
+.h-\[11rem\] {
+  height: 11rem;
+}
+
 .h-\[13vh\] {
   height: 13vh;
 }
@@ -668,16 +656,16 @@ video {
   height: 14rem;
 }
 
+.h-\[15rem\] {
+  height: 15rem;
+}
+
 .h-\[15vh\] {
   height: 15vh;
 }
 
-.h-\[16rem\] {
-  height: 16rem;
-}
-
-.h-\[25vh\] {
-  height: 25vh;
+.h-\[27vh\] {
+  height: 27vh;
 }
 
 .h-\[4rem\] {
@@ -700,60 +688,20 @@ video {
   height: 100%;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
-.h-\[27vh\] {
-  height: 27vh;
-}
-
-.h-\[12rem\] {
-  height: 12rem;
-}
-
-.h-\[15rem\] {
-  height: 15rem;
-}
-
-.h-\[11rem\] {
-  height: 11rem;
-}
-
 .w-\[100vw\] {
   width: 100vw;
 }
 
-.w-\[11vw\] {
-  width: 11vw;
-}
-
-.w-\[12vw\] {
-  width: 12vw;
-}
-
-.w-\[15vw\] {
-  width: 15vw;
-}
-
-.w-\[25\%\] {
-  width: 25%;
+.w-\[13vw\] {
+  width: 13vw;
 }
 
 .w-\[25rem\] {
   width: 25rem;
 }
 
-.w-\[25vw\] {
-  width: 25vw;
-}
-
 .w-\[35vw\] {
   width: 35vw;
-}
-
-.w-\[40\%\] {
-  width: 40%;
 }
 
 .w-\[50\%\] {
@@ -788,10 +736,6 @@ video {
   width: 100%;
 }
 
-.w-\[13vw\] {
-  width: 13vw;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -822,10 +766,6 @@ video {
 
 .justify-around {
   justify-content: space-around;
-}
-
-.gap-0 {
-  gap: 0px;
 }
 
 .gap-10 {
@@ -876,18 +816,6 @@ video {
   border-radius: 0.375rem;
 }
 
-.rounded-bl-md {
-  border-bottom-left-radius: 0.375rem;
-}
-
-.rounded-tl-md {
-  border-top-left-radius: 0.375rem;
-}
-
-.rounded-tr-lg {
-  border-top-right-radius: 0.5rem;
-}
-
 .bg-\[rgb\(217\2c 217\2c 217\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(217 217 217 / var(--tw-bg-opacity, 1));
@@ -903,22 +831,12 @@ video {
   background-color: rgb(233 228 212 / var(--tw-bg-opacity, 1));
 }
 
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
 .text-center {
   text-align: center;
 }
 
-.text-\[30px\] {
-  font-size: 30px;
+.text-\[1\.5rem\] {
+  font-size: 1.5rem;
 }
 
 .text-\[4rem\] {
@@ -928,10 +846,6 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-\[1\.5rem\] {
-  font-size: 1.5rem;
 }
 
 .font-\[800\] {
