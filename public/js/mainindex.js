@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         statusList: document.getElementsByClassName("statuslist")[0],
         savebtn: document.getElementsByClassName('savewatch')[0],
         watchlist: document.getElementById('addwatchlist')[0],
+        bookmarkimg: document.getElementById('bookmarkimg'),
     };
 
     //Initialy loder is display hidden
@@ -120,8 +121,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const updateMovieCollection = (name, poster) => {
             elements.savebtn.addEventListener('click', () => {
-                alert('clicked');
+
                 localStorage.setItem(`${name}`, `${poster}`);
+
+                elements.bookmarkimg.src = './resources/icons8-bookmark.gif';
+
+                setTimeout(() => {
+                    elements.bookmarkimg.src = './resources/img/bookmark-white.png'
+                }, 600);
+
+
+
             })
 
         }
@@ -165,7 +175,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    //calling youtube id
+    // calling youtube id
     updateYouTubePlayer(ytVideoId);
+
+
+
+
 
 });
