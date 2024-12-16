@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/watchlist', collection);
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.sendFile(path.join(__dirname, 'index.html'));
 })
 app.get('/about', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'about.html'));
