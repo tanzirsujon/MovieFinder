@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Fetch movie details
         const fetchMovie = async () => {
-            const url = `http://www.omdbapi.com/?t=${encodeURIComponent(title)}&apikey=${apiKeys.omdb}`;
+            const url = `https://www.omdbapi.com/?t=${encodeURIComponent(title)}&apikey=${apiKeys.omdb}`;
             const response = await fetch(url);
             if (!response.ok) throw new Error("Error fetching movie data");
             return response.json();
