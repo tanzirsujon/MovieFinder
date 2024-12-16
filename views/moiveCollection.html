@@ -84,6 +84,7 @@
         let bt2 = document.getElementById('bt2');
         let currentIndex = 1;
         const itemPerPage = 2;
+
         let imgSrc = [];
         for (let i = 0; i < localStorage.length; i++) {
             let key = localStorage.key(i)
@@ -91,17 +92,29 @@
             imgSrc.push(value);
 
         }
+        const totalPage = Math.ceil(imgSrc.length / itemPerPage);
+        function numberButton(index) {
+        
+
+        }
+
 
         function displayIndex(page) {
             const startIndex = (page - 1) * itemPerPage;
             const endIndex = page * itemPerPage;
             const item = imgSrc.slice(startIndex, endIndex);
-              
-            collection.innerHTML = `<img src="${item[0]}"><img src="${item[1]}">`;
+
+            collection.innerHTML = ' ';
+            item.forEach((items) => {
+
+                collection.innerHTML += `<img src="${items}">`
+
+            })
+
 
         }
         function directionBtn(direction) {
-            const totalPage = Math.ceil(imgSrc.length / itemPerPage);
+
             if (direction === "next" && currentIndex < totalPage) {
                 currentIndex++;
             }

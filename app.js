@@ -1,7 +1,9 @@
 const express = require('express')
 const app = express()
 const collection = require('./routes/collection');
-const port = 3000
+const port = 3000;
+const dotenv = require('dotenv');
+dotenv.config();
 
 const path = require('path')
 app.use(express.static(path.join(__dirname, 'public')));
@@ -12,7 +14,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 app.get('/about', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'main.html'));
+  res.sendFile(path.join(__dirname, 'public', 'about.html'));
 })
 
 
